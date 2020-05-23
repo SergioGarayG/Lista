@@ -24,7 +24,7 @@ public class LaFactura {
         int opcion=0,ELEMENTO;
         do{
             try{
-                opcion=Integer.parseInt(JOptionPane.showInputDialog(null, "1. Agregar Un elemento al inicio\n2.Mostrar lista\n"
+                opcion=Integer.parseInt(JOptionPane.showInputDialog(null, "1. Agregar un Elemento al inicio\n2. Mostrar lista\n"
                         +"3. Salir","Menu",3));
                 switch(opcion){
                     case 1:

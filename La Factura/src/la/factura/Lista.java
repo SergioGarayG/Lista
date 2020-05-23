@@ -24,19 +24,20 @@ public class Lista {
         return Tamaño;
     }
     
-    public void AgregarAlInicio(int valor){
+    public void AgregarAlInicio(int valorElemento){
         // Define un nuevo nodo.
         Factura FAC = new Factura();;
         // Agrega al valor al nodo.
-        FAC.setValorLista(valor);
+        FAC.setValorLista(valorElemento);
         // Consulta si la lista esta vacia.
-        Inicio = new Factura(valor,Inicio);
+        Inicio = new Factura(valorElemento,Inicio);
             if(fin==null){
                 fin=Inicio;
             }
     }
     public void MostrarTodaLista(){
         Factura recorre=Inicio;
+        System.out.println();
         while(recorre!=null){
             System.out.println("["+recorre.ValorLista+"]--->");
             recorre=recorre.ArticuloSiguiente;

@@ -21,14 +21,6 @@ public class Factura {
         ValorLista=VALOR;
         ArticuloSiguiente=f;
     }
-    /*public void Factura() {
-        this.ValorLista=0;
-        this.ArticuloSiguiente=null;
-    }*/
-    
-    public int getValorLista() {
-        return ValorLista;
-    }
 
     public void setValorLista(int ValorLista) {
         this.ValorLista = ValorLista;
@@ -57,17 +49,6 @@ public class Factura {
         this.AR = AR;
     }
     
-    /*public void AgregarArticulo(Articulo AR){
-        for(int i=0;i<this.AR.length;i++){
-            if(this.AR==null){
-                this.AR=AR;
-                System.out.println("Agregado");
-                return true;
-            }
-            
-        }//System.out.println("NO AGREGADOR");
-        //return false;
-    }*/
     public void Agregar(Articulo AR){
         L.Agregar(AR);
     }
